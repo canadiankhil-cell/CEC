@@ -1,268 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects – Canadian Consultants</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canadian Consultants – Architects &amp; Consultant Engineers</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
-<nav class="nav-drawer" id="navDrawer">
-  <a href="https://claude.ai/public/artifacts/cb58d216-b272-4ffc-9ed1-1516980e7f82">Home</a>
-  <a href="https://www.canadian-consultants.com/about-us">About Us</a>
-  <a href="https://www.canadian-consultants.com/meet-our-heroes">Meet Our Heroes</a>
-  <a href="#" class="active">Projects</a>
-  <a href="https://www.canadian-consultants.com/services">Services</a>
-  <a href="https://www.canadian-consultants.com/contact-us">Contact Us</a>
-  <a href="https://www.canadian-consultants.com/careers">Careers</a>
-</nav>
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 
-<header>
-  <div class="header-left">
-    <button class="hamburger" id="hamburgerBtn" onclick="toggleNav()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <a class="logo-wrap" href="https://claude.ai/public/artifacts/cb58d216-b272-4ffc-9ed1-1516980e7f82">
-      <img src="images/img_01.png" alt="Canadian Consultant">
-    </a>
+<!-- SIDEBAR DRAWER -->
+<aside class="sidebar" id="sidebar">
+  <ul class="sidebar-menu">
+    <li><a href="#" class="active">Home <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="https://www.canadian-consultants.com/about-us" target="_blank" rel="noopener">About Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="https://www.canadian-consultants.com/meet-our-heroes" target="_blank" rel="noopener">Meet Our Heroes <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="https://www.canadian-consultants.com/projects" target="_blank" rel="noopener">Projects <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="https://www.canadian-consultants.com/services" target="_blank" rel="noopener">Services <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="https://www.canadian-consultants.com/contact-us" target="_blank" rel="noopener">Contact Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="https://www.canadian-consultants.com/careers" target="_blank" rel="noopener">Careers <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+  </ul>
+  <div class="sidebar-logo">
+    <img src="images/logo.png" alt="Canadian Consultants">
   </div>
-  <div class="search-wrap">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+</aside>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" onclick="closeSearch()">×</button>
+  <div class="search-form">
+    <svg viewBox="0 0 24 24" style="width:28px;height:28px;stroke:rgba(255,255,255,0.6);fill:none;stroke-width:2;stroke-linecap:round;flex-shrink:0">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
     </svg>
-    <input type="text" placeholder="Search projects…" />
-  </div>
-</header>
-
-<section class="page-hero">
-  <div class="hero-bg"></div>
-  <h1 class="hero-title">Our Selected Projects<span></span></h1>
-</section>
-
-<section class="projects-section">
-  <div class="section-intro">
-    <p>Architecture &amp; Engineering Excellence</p>
-    <h2>Featured Works</h2>
-  </div>
-
-  <div class="projects-grid">
-
-    <!-- 1: Aspirz By Danube -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img1" src="images/img_02.jpg" alt="Aspirz by Danube">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_02.jpg" onclick="swapImg('img1',this.src)" alt="">
-          <img src="images/img_03.jpg" onclick="swapImg('img1',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Aspirz By Danube</h3>
-        <p>A striking high-rise residential development that redefines the skyline with its distinctive curved façade and premium amenities.</p>
-        <span class="card-tag">Residential Tower · Dubai</span>
-      </div>
-    </div>
-
-    <!-- 2: Tycoon Tower -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img2" src="images/img_04.jpg" alt="Tycoon Tower">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_04.jpg" onclick="swapImg('img2',this.src)" alt="">
-          <img src="images/img_05.jpg" onclick="swapImg('img2',this.src)" alt="">
-          <img src="images/img_06.jpg" onclick="swapImg('img2',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Tycoon Tower</h3>
-        <p>An iconic super-structure featuring four interconnected cylindrical towers with ornate latticed skin and sky-bridge connections.</p>
-        <span class="card-tag">Mixed-Use Tower · Cairo</span>
-      </div>
-    </div>
-
-    <!-- 3: Sharjah Mall -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img3" src="images/img_07.jpg" alt="Sharjah Mall">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_07.jpg" onclick="swapImg('img3',this.src)" alt="">
-          <img src="images/img_08.jpg" onclick="swapImg('img3',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Sharjah Mall</h3>
-        <p>A grand coastal retail and residential complex featuring sweeping curved façades, a luminous glass dome, and an iconic beachfront promenade.</p>
-        <span class="card-tag">Commercial / Retail · Sharjah</span>
-      </div>
-    </div>
-
-    <!-- 4: Ajman Creek Towers -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img4" src="images/img_09.jpg" alt="Ajman Creek Towers">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_09.jpg" onclick="swapImg('img4',this.src)" alt="">
-          <img src="images/img_10.jpg" onclick="swapImg('img4',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Ajman Creek Towers</h3>
-        <p>A waterfront ensemble of five elegant towers set against the creek, with resort-style pool decks and yacht access.</p>
-        <span class="card-tag">Waterfront Residential · Ajman</span>
-      </div>
-    </div>
-
-    <!-- 5: Gevora Hotel -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img5" src="images/img_11.jpg" alt="Gevora Hotel">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_11.jpg" onclick="swapImg('img5',this.src)" alt="">
-          <img src="images/img_12.jpg" onclick="swapImg('img5',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Gevora Hotel</h3>
-        <p>One of the world's tallest hotels, distinguished by its gold-clad façade and spectacular latticed spire rising above the Dubai skyline.</p>
-        <span class="card-tag">Hospitality</span>
-      </div>
-    </div>
-
-    <!-- 6: Sky Spiral Towers -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img6" src="images/img_13.jpg" alt="Sky Spiral Towers">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_13.jpg" onclick="swapImg('img6',this.src)" alt="">
-          <img src="images/img_14.jpg" onclick="swapImg('img6',this.src)" alt="">
-          <img src="images/img_15.jpg" onclick="swapImg('img6',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Sky Spiral Towers</h3>
-        <p>Twin towers crowned with ornate golden spires, connected by sweeping diagonal structural arches for a futuristic urban statement.</p>
-        <span class="card-tag">Luxury Residential · Dubai</span>
-      </div>
-    </div>
-
-    <!-- 7: Oasis Towers -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img7" src="images/img_16.jpg" alt="Oasis Towers">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-      </div>
-      <div class="card-body">
-        <h3>Oasis Towers</h3>
-        <p>A bold contemporary tower featuring a white tubular frame wrapping the façade, with lush planted balconies creating a garden-in-the-sky effect.</p>
-        <span class="card-tag">Residential · Ajman</span>
-      </div>
-    </div>
-
-    <!-- 8: Sky Gardens Tower -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img8" src="images/img_17.jpg" alt="Sky Gardens Tower">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-      </div>
-      <div class="card-body">
-        <h3>Sky Gardens Tower</h3>
-        <p>A sustainable high-rise with dramatic vertical garden columns cascading down the full height of the façade, blending nature with architecture.</p>
-        <span class="card-tag">Sustainable Design · Ajman</span>
-      </div>
-    </div>
-
-    <!-- 9: Infinity Tower -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img9" src="images/img_18.jpg" alt="Infinity Tower">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-      </div>
-      <div class="card-body">
-        <h3>Infinity Tower</h3>
-        <p>A commanding tapered tower with a sculpted crown and richly textured horizontal banding, standing tall as a landmark of refined elegance.</p>
-        <span class="card-tag">Luxury High-Rise · Sharjah</span>
-      </div>
-    </div>
-
-
-    <!-- 10: Crowne Plaza Hotel -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img10" src="images/img_19.jpg" alt="Crowne Plaza Hotel">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_19.jpg" onclick="swapImg('img10',this.src)" alt="">
-          <img src="images/img_20.jpg" onclick="swapImg('img10',this.src)" alt="">
-          <img src="images/img_21.jpg" onclick="swapImg('img10',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Crowne Plaza Hotel</h3>
-        <p>A stunning beachfront hotel complex in Batumi, Georgia, featuring bold emerald-green glazed façades, sculptural latticed towers, and a vibrant seaside promenade.</p>
-        <span class="card-tag">Hospitality · Georgia</span>
-      </div>
-    </div>
-
-
-    <!-- 11: City Premier Marina Hotel Apartments -->
-    <div class="project-card">
-      <div class="card-image-wrap">
-        <img class="main-img" id="img11" src="images/img_22.jpg" alt="City Premier Marina Hotel Apartments">
-        <div class="card-overlay"></div>
-        <span class="zoom-hint">&#x26F6; View</span>
-        <div class="thumb-strip">
-          <img src="images/img_22.jpg" onclick="swapImg('img11',this.src)" alt="">
-          <img src="images/img_23.jpg" onclick="swapImg('img11',this.src)" alt="">
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>City Premier Marina Hotel Apartments</h3>
-        <p>An elegant waterfront tower rising above Dubai Marina, featuring a distinctive crown, wrap-around balconies with stunning canal views, and direct marina access.</p>
-        <span class="card-tag">Hospitality · Dubai Marina</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <p><strong>Canadian Consultants</strong> — Architecture &amp; Engineering Consultancy</p>
-  <p style="margin-top:6px;">© 2025 All Rights Reserved</p>
-</footer>
-
-<script src="js/script.js"></script>
-
-<!-- LIGHTBOX -->
-<div class="lightbox-overlay" id="lightbox" onclick="lbClickOutside(event)">
-  <button class="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
-  <button class="lightbox-prev" onclick="lbNav(-1)">&#8249;</button>
-  <button class="lightbox-next" onclick="lbNav(1)">&#8250;</button>
-  <div class="lightbox-inner">
-    <img class="lightbox-img" id="lbImg" src="" alt="">
-    <div class="lightbox-caption" id="lbCaption"></div>
-    <div class="lightbox-tag" id="lbTag"></div>
-    <div class="lightbox-thumbs" id="lbThumbs"></div>
+    <input type="text" placeholder="Search…" id="searchInput" autocomplete="off">
   </div>
 </div>
 
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <button class="menu-btn" id="menuBtn" onclick="toggleSidebar()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-logo-inline">
+      <img src="images/logo.png" alt="Canadian Consultants">
+    </div>
+  </div>
+  <div class="nav-right">
+    <button class="search-btn" onclick="openSearch()" aria-label="Search">
+      <svg viewBox="0 0 24 24" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Architects &amp; Consultant Engineers</p>
+  <h1 class="hero-slogan">DESIGNED WITH<br><span>INTEGRITY</span></h1>
+  <p class="hero-sub">Take a closer look at our architectural masterpieces</p>
+  <a href="https://www.canadian-consultants.com/projects" class="btn-primary" target="_blank" rel="noopener">
+    View Our Projects
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </a>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section class="social-section">
+  <div class="social-inner">
+
+    <!-- Instagram -->
+    <a class="social-link" href="https://www.instagram.com/canadianconsultants_?igsh=MWlhd2Jpdmk3ZHo0aQ==" target="_blank" rel="noopener">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </div>
+      <span class="social-name">Instagram</span>
+    </a>
+
+    <!-- Facebook -->
+    <a class="social-link" href="https://www.facebook.com/share/1GUWWhjhip/?mibextid=wwXIfr" target="_blank" rel="noopener">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </div>
+      <span class="social-name">Facebook</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a class="social-link" href="https://www.linkedin.com/posts/canadian-engineering-consultants_%D8%A5%D9%84%D9%89-%D8%A3%D8%A8%D9%86%D8%A7%D8%A1-%D8%A7%D9%84%D9%88%D8%B7%D9%86-%D9%88%D9%83%D9%84-%D9%85%D9%86-%D9%8A%D8%B9%D8%AA%D8%A8%D8%B1%D9%87-%D9%88%D8%B7%D9%86%D8%A7-%D9%83%D9%84-activity-7441147929005826048-ZTXk" target="_blank" rel="noopener">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <span class="social-name">LinkedIn</span>
+    </a>
+
+    <!-- X / Twitter -->
+    <a class="social-link" href="https://x.com/emad_elshirbiny?s=21" target="_blank" rel="noopener">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </div>
+      <span class="social-name">X</span>
+    </a>
+
+    <!-- YouTube -->
+    <a class="social-link" href="https://www.youtube.com" target="_blank" rel="noopener">
+      <div class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </div>
+      <span class="social-name">YouTube</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="stats-header reveal">
+    <span class="section-eyebrow">Our Track Record</span>
+    <h2 class="section-title">Numbers That Speak<br>For Themselves</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <span class="stat-number" data-target="30"><span class="count">0</span><span class="stat-suffix">+</span></span>
+      <span class="stat-label">Years of Experience</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-number" data-target="100"><span class="count">0</span><span class="stat-suffix">+</span></span>
+      <span class="stat-label">Satisfied Clients</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-number" data-target="300"><span class="count">0</span><span class="stat-suffix">+</span></span>
+      <span class="stat-label">Projects Completed</span>
+    </div>
+  </div>
+</section>
+
+<!-- NAVIGATION LINKS -->
+<section class="links-section">
+  <div class="stats-header reveal">
+    <span class="section-eyebrow">Explore</span>
+    <h2 class="section-title">Discover Canadian<br>Consultants</h2>
+  </div>
+  <div class="links-grid">
+    <a href="https://www.canadian-consultants.com/meet-our-heroes" class="nav-card reveal" target="_blank" rel="noopener">
+      <div class="nav-card-text">
+        <span class="nav-card-num">01</span>
+        <span class="nav-card-title">Meet Our Heroes</span>
+      </div>
+      <div class="nav-card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+    <a href="https://www.canadian-consultants.com/about-us" class="nav-card reveal" target="_blank" rel="noopener">
+      <div class="nav-card-text">
+        <span class="nav-card-num">02</span>
+        <span class="nav-card-title">About Us</span>
+      </div>
+      <div class="nav-card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+    <a href="https://www.canadian-consultants.com/services" class="nav-card reveal" target="_blank" rel="noopener">
+      <div class="nav-card-text">
+        <span class="nav-card-num">03</span>
+        <span class="nav-card-title">Services</span>
+      </div>
+      <div class="nav-card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+    <a href="https://www.canadian-consultants.com/contact-us" class="nav-card reveal" target="_blank" rel="noopener">
+      <div class="nav-card-text">
+        <span class="nav-card-num">04</span>
+        <span class="nav-card-title">Contact Us</span>
+      </div>
+      <div class="nav-card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>Canadian Consultants</strong> — Architects &amp; Consultant Engineers</p>
+  <p style="margin-top:8px;">Designed with Integrity · © 2026</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

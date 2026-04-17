@@ -6,6 +6,7 @@
   <title>About Us – Canadian Consultant</title>
   <link rel="icon" type="image/png" href="images/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/about-us.css">
 </head>
 <body>
@@ -16,12 +17,12 @@
 <!-- SIDEBAR -->
 <aside class="sidebar" id="sidebar">
   <ul class="sidebar-menu">
-    <li><a href="#">Home <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
-    <li><a href="https://www.canadian-consultants.com/about-us" target="_blank" rel="noopener">About Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="index.html">Home <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="about-us.html" class="active">About Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
     <li><a href="https://www.canadian-consultants.com/meet-our-heroes" target="_blank" rel="noopener">Meet Our Heroes <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
-    <li><a href="https://www.canadian-consultants.com/projects" target="_blank" rel="noopener">Projects <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="projects.html">Projects <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
     <li><a href="https://www.canadian-consultants.com/services" target="_blank" rel="noopener">Services <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
-    <li><a href="#" class="active">Contact Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="contact.html">Contact Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
     <li><a href="https://www.canadian-consultants.com/careers" target="_blank" rel="noopener">Careers <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
   </ul>
   <div class="sidebar-logo">
@@ -43,7 +44,7 @@
     <svg viewBox="0 0 24 24" stroke-linejoin="round">
       <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
     </svg>
-    <input type="text" placeholder="Search projects...">
+    <input type="text" placeholder="Search…">
   </div>
 </nav>
 
@@ -106,21 +107,11 @@
   </div>
 
   <div class="timeline-tabs reveal">
-    <button class="tl-tab active" onclick="switchTab(0)">
-      1996<span class="tl-tab-city">Ajman</span>
-    </button>
-    <button class="tl-tab" onclick="switchTab(1)">
-      1997<span class="tl-tab-city">Dubai</span>
-    </button>
-    <button class="tl-tab" onclick="switchTab(2)">
-      1999<span class="tl-tab-city">Sharjah</span>
-    </button>
-    <button class="tl-tab" onclick="switchTab(3)">
-      2010<span class="tl-tab-city">Riyadh</span>
-    </button>
-    <button class="tl-tab" onclick="switchTab(4)">
-      2014<span class="tl-tab-city">Cairo</span>
-    </button>
+    <button class="tl-tab active" onclick="switchTab(0)">1996<span class="tl-tab-city">Ajman</span></button>
+    <button class="tl-tab" onclick="switchTab(1)">1997<span class="tl-tab-city">Dubai</span></button>
+    <button class="tl-tab" onclick="switchTab(2)">1999<span class="tl-tab-city">Sharjah</span></button>
+    <button class="tl-tab" onclick="switchTab(3)">2010<span class="tl-tab-city">Riyadh</span></button>
+    <button class="tl-tab" onclick="switchTab(4)">2014<span class="tl-tab-city">Cairo</span></button>
   </div>
 
   <div class="tl-panels">
@@ -154,16 +145,17 @@
         <div class="tl-city-name">Dubai</div>
         <div class="tl-country-tag">United Arab Emirates</div>
         <div class="tl-flag">🇦🇪</div>
-        <div class="tl-milestone">Office No. 2 · The Global Stage</div>
+        <div class="tl-milestone">Office No. 2 · Expanding Our Reach</div>
       </div>
       <div class="tl-panel-right">
-        <div class="tl-event-label">First Expansion</div>
-        <div class="tl-event-title">Stepping into the World's Most Ambitious City</div>
-        <div class="tl-event-body">Just one year after our founding, Canadian Consultant established a presence in Dubai — the most dynamic and fastest-growing city in the world. This strategic move placed us at the heart of the UAE's construction boom, allowing us to take on landmark projects and forge partnerships with the region's leading developers and government authorities.</div>
+        <div class="tl-event-label">The City of Ambition</div>
+        <div class="tl-event-title">Establishing in Dubai</div>
+        <div class="tl-event-body">Just one year after our founding, we expanded to Dubai — one of the world's most dynamic cities and a global hub for architecture and engineering. Our Dubai office became the engine of our growth, allowing us to serve major developers and government entities in the region's most ambitious urban landscape.</div>
         <div class="tl-chips">
-          <span class="tl-chip">MEP Design</span>
-          <span class="tl-chip">Urban Planning</span>
-          <span class="tl-chip">Development</span>
+          <span class="tl-chip">High-Rise</span>
+          <span class="tl-chip">Commercial</span>
+          <span class="tl-chip">Mixed-Use</span>
+          <span class="tl-chip">UAE</span>
         </div>
       </div>
     </div>
@@ -178,13 +170,13 @@
         <div class="tl-milestone">Office No. 3 · The Cultural Capital</div>
       </div>
       <div class="tl-panel-right">
-        <div class="tl-event-label">Deepening UAE Roots</div>
-        <div class="tl-event-title">Completing Our UAE Triangle</div>
-        <div class="tl-event-body">With our Sharjah office, Canadian Consultant completed a powerful footprint across the three core UAE emirates. Known as the cultural capital of the Arab world, Sharjah gave us access to a diverse portfolio of civic, cultural, and residential projects. Our three UAE offices worked in synergy, creating an integrated network capable of handling projects of any scale.</div>
+        <div class="tl-event-label">Growth Within the UAE</div>
+        <div class="tl-event-title">Opening in Sharjah</div>
+        <div class="tl-event-body">With our UAE presence firmly established, we extended our footprint to Sharjah — the UAE's cultural capital — in 1999. This office allowed us to serve a growing portfolio of residential, commercial, and institutional projects in the Northern Emirates, reinforcing our reputation across the country.</div>
         <div class="tl-chips">
-          <span class="tl-chip">Civic Projects</span>
           <span class="tl-chip">Residential</span>
-          <span class="tl-chip">Cultural</span>
+          <span class="tl-chip">Institutional</span>
+          <span class="tl-chip">Northern Emirates</span>
         </div>
       </div>
     </div>
@@ -194,19 +186,18 @@
       <div class="tl-panel-left">
         <div class="tl-year-big">2010</div>
         <div class="tl-city-name">Riyadh</div>
-        <div class="tl-country-tag">Saudi Arabia</div>
+        <div class="tl-country-tag">Kingdom of Saudi Arabia</div>
         <div class="tl-flag">🇸🇦</div>
-        <div class="tl-milestone">Office No. 4 · The GCC Leap</div>
+        <div class="tl-milestone">Office No. 4 · Into the Kingdom</div>
       </div>
       <div class="tl-panel-right">
-        <div class="tl-event-label">Regional Expansion</div>
-        <div class="tl-event-title">Taking Our Expertise to the Kingdom</div>
-        <div class="tl-event-body">After over a decade of proven excellence in the UAE, Canadian Consultant expanded into the Kingdom of Saudi Arabia with an office in Riyadh. Saudi Arabia's Vision 2030 and its extraordinary infrastructure investment created the ideal environment for our expertise. Our Riyadh office became a hub for large-scale masterplanning, government facilities, and mixed-use developments across the Kingdom.</div>
+        <div class="tl-event-label">Crossing Borders</div>
+        <div class="tl-event-title">Entering Saudi Arabia</div>
+        <div class="tl-event-body">In 2010, Canadian Consultant made its first move beyond the UAE by establishing an office in Riyadh, Saudi Arabia. This milestone marked our evolution into a regional firm, enabling us to participate in the Kingdom's massive infrastructure and development projects driven by Vision 2030's precursor initiatives.</div>
         <div class="tl-chips">
-          <span class="tl-chip">Masterplanning</span>
+          <span class="tl-chip">Infrastructure</span>
           <span class="tl-chip">Government</span>
-          <span class="tl-chip">Vision 2030</span>
-          <span class="tl-chip">KSA</span>
+          <span class="tl-chip">Saudi Arabia</span>
         </div>
       </div>
     </div>
@@ -216,88 +207,76 @@
       <div class="tl-panel-left">
         <div class="tl-year-big">2014</div>
         <div class="tl-city-name">Cairo</div>
-        <div class="tl-country-tag">Egypt</div>
+        <div class="tl-country-tag">Arab Republic of Egypt</div>
         <div class="tl-flag">🇪🇬</div>
         <div class="tl-milestone">Office No. 5 · North Africa</div>
       </div>
       <div class="tl-panel-right">
-        <div class="tl-event-label">Crossing into North Africa</div>
-        <div class="tl-event-title">Bringing World-Class Engineering to Cairo</div>
-        <div class="tl-event-body">Our Cairo office marked a significant milestone — Canadian Consultant's first presence outside the GCC. Egypt, with its rich heritage and rapidly modernising economy, offered exciting opportunities across housing, infrastructure, and mixed-use development. Cairo connected us to a talented pool of engineers and architects, strengthening our capacity and enriching the diversity of our creative output.</div>
+        <div class="tl-event-label">Reaching North Africa</div>
+        <div class="tl-event-title">A New Chapter in Cairo</div>
+        <div class="tl-event-body">Our fifth office in Cairo, Egypt completed our regional expansion across three countries. Cairo's booming real estate market and large-scale urban development projects provided new opportunities for Canadian Consultant to deliver world-class architectural and engineering solutions in one of the Arab world's most populous and historically rich cities.</div>
         <div class="tl-chips">
-          <span class="tl-chip">Infrastructure</span>
-          <span class="tl-chip">Housing</span>
-          <span class="tl-chip">Mixed-Use</span>
+          <span class="tl-chip">Urban Development</span>
+          <span class="tl-chip">Real Estate</span>
           <span class="tl-chip">Egypt</span>
         </div>
       </div>
     </div>
 
   </div>
-
-  <div class="tl-nav">
-    <button class="tl-dot active" onclick="switchTab(0)" aria-label="1996 Ajman"></button>
-    <button class="tl-dot" onclick="switchTab(1)" aria-label="1997 Dubai"></button>
-    <button class="tl-dot" onclick="switchTab(2)" aria-label="1999 Sharjah"></button>
-    <button class="tl-dot" onclick="switchTab(3)" aria-label="2010 Riyadh"></button>
-    <button class="tl-dot" onclick="switchTab(4)" aria-label="2014 Cairo"></button>
-  </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT / OFFICE INFO SECTION -->
 <section class="contact-section">
-  <div class="contact-inner">
+  <div class="contact-grid">
 
-    <div class="contact-info reveal">
-      <span class="contact-tag">Reach Us</span>
-      <h2 class="contact-heading">Let's Build Something <em>Remarkable</em> Together</h2>
-      <p class="contact-intro">Whether you're planning a new development, seeking an engineering partner, or simply exploring our capabilities — our team is ready to guide you from the very first conversation.</p>
+    <!-- Office Locations -->
+    <div class="reveal">
+      <div class="office-list">
+        <div class="office-item">
+          <div class="office-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="office-country">🇦🇪 United Arab Emirates <span style="font-size:10px;color:var(--gray-mid);font-weight:400;">(HQ)</span></div>
+            <div class="office-cities">Ajman (est. 1996) · Dubai (est. 1997) · Sharjah (est. 1999)</div>
+          </div>
+        </div>
 
-      <div class="offices-title">Our Offices</div>
+        <div class="office-item">
+          <div class="office-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="office-country">🇸🇦 Saudi Arabia</div>
+            <div class="office-cities">Riyadh (est. 2010)</div>
+          </div>
+        </div>
 
-      <div class="office-item">
-        <div class="office-icon">
-          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="office-item">
+          <div class="office-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="office-country">🇪🇬 Egypt</div>
+            <div class="office-cities">Cairo (est. 2014)</div>
+          </div>
         </div>
-        <div>
-          <div class="office-country">🇦🇪 United Arab Emirates <span style="font-size:10px;color:var(--gray-mid);font-weight:400;">(HQ)</span></div>
-          <div class="office-cities">Ajman (est. 1996) · Dubai (est. 1997) · Sharjah (est. 1999)</div>
-        </div>
-      </div>
 
-      <div class="office-item">
-        <div class="office-icon">
-          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="contact-socials">
+          <a class="soc-btn" href="https://www.instagram.com/canadianconsultants_" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a class="soc-btn" href="https://www.facebook.com/share/1GUWWhjhip/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a class="soc-btn" href="https://x.com/emad_elshirbiny" target="_blank" rel="noopener" aria-label="X">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="soc-btn" href="https://www.linkedin.com/company/canadian-engineering-consultants" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
-        <div>
-          <div class="office-country">🇸🇦 Saudi Arabia</div>
-          <div class="office-cities">Riyadh (est. 2010)</div>
-        </div>
-      </div>
-
-      <div class="office-item">
-        <div class="office-icon">
-          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <div>
-          <div class="office-country">🇪🇬 Egypt</div>
-          <div class="office-cities">Cairo (est. 2014)</div>
-        </div>
-      </div>
-
-      <div class="contact-socials">
-        <a class="soc-btn" href="https://www.instagram.com/canadianconsultants_" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-        <a class="soc-btn" href="https://www.facebook.com/share/1GUWWhjhip/" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a class="soc-btn" href="https://x.com/emad_elshirbiny" target="_blank" rel="noopener" aria-label="X">
-          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a class="soc-btn" href="https://www.linkedin.com/company/canadian-engineering-consultants" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
       </div>
     </div>
 
@@ -400,10 +379,10 @@
     <span style="font-size:11px;margin-top:4px;display:block;">Established 1996 &nbsp;·&nbsp; © 2026 All Rights Reserved</span>
   </div>
   <div class="footer-links">
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Services</a>
-    <a href="#">Careers</a>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://www.canadian-consultants.com/services" target="_blank" rel="noopener">Services</a>
+    <a href="https://www.canadian-consultants.com/careers" target="_blank" rel="noopener">Careers</a>
   </div>
 </footer>
 

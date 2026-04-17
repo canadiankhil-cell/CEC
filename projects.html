@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects – Canadian Consultants</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/projects.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects – Canadian Consultants</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
 
+<!-- NAV OVERLAY -->
 <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<!-- NAV DRAWER -->
 <nav class="nav-drawer" id="navDrawer">
   <a href="index.html">Home</a>
-  <a href="https://www.canadian-consultants.com/about-us">About Us</a>
-  <a href="https://www.canadian-consultants.com/meet-our-heroes">Meet Our Heroes</a>
-  <a href="#" class="active">Projects</a>
-  <a href="https://www.canadian-consultants.com/services">Services</a>
-  <a href="https://www.canadian-consultants.com/contact">Contact Us</a>
-  <a href="https://www.canadian-consultants.com/careers">Careers</a>
+  <a href="about-us.html">About Us</a>
+  <a href="https://www.canadian-consultants.com/meet-our-heroes" target="_blank" rel="noopener">Meet Our Heroes</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="https://www.canadian-consultants.com/services" target="_blank" rel="noopener">Services</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="https://www.canadian-consultants.com/careers" target="_blank" rel="noopener">Careers</a>
 </nav>
 
+<!-- HEADER -->
 <header>
   <div class="header-left">
     <button class="hamburger" id="hamburgerBtn" onclick="toggleNav()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-   <a class="logo-wrap" href="index.html">
-      <img src="images/img_01.png" alt="Canadian Consultant">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/img_01.png" alt="Canadian Consultants">
     </a>
   </div>
   <div class="search-wrap">
@@ -37,11 +43,13 @@
   </div>
 </header>
 
+<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="hero-bg"></div>
   <h1 class="hero-title">Our Selected Projects<span></span></h1>
 </section>
 
+<!-- PROJECTS -->
 <section class="projects-section">
   <div class="section-intro">
     <p>Architecture &amp; Engineering Excellence</p>
@@ -202,7 +210,6 @@
       </div>
     </div>
 
-
     <!-- 10: Crowne Plaza Hotel -->
     <div class="project-card">
       <div class="card-image-wrap">
@@ -221,7 +228,6 @@
         <span class="card-tag">Hospitality · Georgia</span>
       </div>
     </div>
-
 
     <!-- 11: City Premier Marina Hotel Apartments -->
     <div class="project-card">
@@ -244,12 +250,11 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p><strong>Canadian Consultants</strong> — Architecture &amp; Engineering Consultancy</p>
-  <p style="margin-top:6px;">© 2025 All Rights Reserved</p>
+  <p style="margin-top:6px;">© 2026 All Rights Reserved</p>
 </footer>
-
-<script src="js/projects.js"></script>
 
 <!-- LIGHTBOX -->
 <div class="lightbox-overlay" id="lightbox" onclick="lbClickOutside(event)">
@@ -264,5 +269,6 @@
   </div>
 </div>
 
+<script src="js/projects.js"></script>
 </body>
 </html>

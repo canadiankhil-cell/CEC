@@ -151,7 +151,7 @@ nav.scrolled {
 }
 .nav-logo-wrap img,
 .nav-logo img {
-  height: 72px;
+  height: clamp(131px, 5vw, 131px);
   width: auto;
   object-fit: contain;
   display: block;

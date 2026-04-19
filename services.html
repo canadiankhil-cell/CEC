@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – Canadian Consultant</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <ul class="sidebar-menu">
+    <li><a href="index.html">Home <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="about-us.html">About Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="projects.html">Projects <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="services.html" class="active">Services <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+    <li><a href="contact.html">Contact Us <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
+  </ul>
+  <div class="sidebar-logo">
+    <img src="images/logo.png" alt="Canadian Consultant">
+  </div>
+</aside>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <button class="menu-btn" id="menuBtn" onclick="toggleSidebar()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="images/logo.png" alt="Canadian Consultants">
+    </a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-search">
+      <svg viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="text" placeholder="Search…" aria-label="Search">
+    </div>
+  </div>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="page-hero-content">
+    <span class="hero-eyebrow">Canadian Consultant · 30+ Years of Excellence</span>
+    <h1 class="hero-title">Our <em>Services</em></h1>
+    <div class="hero-rule">
+      <span></span>
+      <p>Integrated engineering solutions from concept to completion</p>
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ SERVICES GRID ══════ -->
+<section class="services-section">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">What We Deliver</span>
+    <h2 class="section-title">Six Disciplines. <em>One Vision.</em></h2>
+    <p class="section-sub">Comprehensive engineering and design across every project stage.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- FEATURED: Architectural Design -->
+    <div class="svc-card featured reveal">
+      <div class="svc-num">01</div>
+      <div class="svc-icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <div>
+        <div class="svc-title">Architectural Design</div>
+        <div class="svc-body">
+          Our architectural team transforms client visions into inspiring, functional spaces. From concept sketches to construction documents, we design buildings that are beautiful, contextually sensitive, and technically resolved — across residential, commercial, civic, cultural, and hospitality typologies.
+        </div>
+        <div class="svc-tags">
+          <span class="svc-tag">Concept Design</span>
+          <span class="svc-tag">Schematic Design</span>
+          <span class="svc-tag">Design Development</span>
+          <span class="svc-tag">Construction Docs</span>
+          <span class="svc-tag">Masterplanning</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structural Engineering -->
+    <div class="svc-card reveal">
+      <div class="svc-num">02</div>
+      <div class="svc-icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+        </svg>
+      </div>
+      <div class="svc-title">Structural Engineering</div>
+      <div class="svc-body">
+        We deliver robust, efficient structural systems for buildings and infrastructure of all scales. Our engineers apply advanced analysis and design methods to ensure every structure meets safety, durability, and economy requirements — from reinforced concrete frames to complex steel systems.
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Concrete Structures</span>
+        <span class="svc-tag">Steel Design</span>
+        <span class="svc-tag">Foundation Design</span>
+        <span class="svc-tag">Seismic Analysis</span>
+      </div>
+    </div>
+
+    <!-- MEP Engineering -->
+    <div class="svc-card reveal">
+      <div class="svc-num">03</div>
+      <div class="svc-icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+        </svg>
+      </div>
+      <div class="svc-title">MEP Engineering</div>
+      <div class="svc-body">
+        Our Mechanical, Electrical, and Plumbing teams design integrated building systems that deliver comfort, safety, and energy efficiency. We coordinate MEP across all project stages to ensure seamless integration with architecture and structure.
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">HVAC</span>
+        <span class="svc-tag">Electrical Systems</span>
+        <span class="svc-tag">Plumbing &amp; Drainage</span>
+        <span class="svc-tag">Fire Protection</span>
+      </div>
+    </div>
+
+    <!-- Urban Planning -->
+    <div class="svc-card reveal">
+      <div class="svc-num">04</div>
+      <div class="svc-icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/>
+          <path d="M8 2v16M16 6v16"/>
+        </svg>
+      </div>
+      <div class="svc-title">Urban Planning &amp; Masterplanning</div>
+      <div class="svc-body">
+        We plan and design entire communities, districts, and urban areas — integrating land use, movement, open space, and infrastructure into coherent, liveable environments grounded in local context and designed for long-term sustainability.
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Land Use Planning</span>
+        <span class="svc-tag">Urban Design</span>
+        <span class="svc-tag">Zoning Studies</span>
+        <span class="svc-tag">Feasibility</span>
+      </div>
+    </div>
+
+    <!-- Project Management -->
+    <div class="svc-card reveal">
+      <div class="svc-num">05</div>
+      <div class="svc-icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+          <polyline points="10 9 9 9 8 9"/>
+        </svg>
+      </div>
+      <div class="svc-title">Project Management</div>
+      <div class="svc-body">
+        We provide expert project management to ensure every engagement is delivered on time, within budget, and to the highest quality standards — coordinating across all stakeholders from client briefing through contractor management and final handover.
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Programme Management</span>
+        <span class="svc-tag">Cost Control</span>
+        <span class="svc-tag">Stakeholder Mgmt</span>
+        <span class="svc-tag">Handover</span>
+      </div>
+    </div>
+
+    <!-- Construction Supervision -->
+    <div class="svc-card reveal">
+      <div class="svc-num">06</div>
+      <div class="svc-icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </div>
+      <div class="svc-title">Construction Supervision</div>
+      <div class="svc-body">
+        Our site supervision teams ensure design intent is faithfully executed on site. We monitor quality, safety, progress, and compliance throughout construction, acting as the owner's trusted representative to protect project outcomes.
+      </div>
+      <div class="svc-tags">
+        <span class="svc-tag">Site Supervision</span>
+        <span class="svc-tag">Quality Control</span>
+        <span class="svc-tag">Safety Compliance</span>
+        <span class="svc-tag">Inspection</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════ PROCESS ══════ -->
+<section class="process-section">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">How We Work</span>
+    <h2 class="section-title">Our <em>Process</em></h2>
+    <p class="section-sub">A structured approach that guarantees results at every stage.</p>
+  </div>
+
+  <div class="process-grid">
+    <div class="process-step reveal">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <div class="step-num">01</div>
+      <div class="step-title">Brief &amp; Discovery</div>
+      <div class="step-body">Understanding your vision, goals, site, and project requirements in depth.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      </div>
+      <div class="step-num">02</div>
+      <div class="step-title">Concept &amp; Design</div>
+      <div class="step-body">Creative, technically sound design solutions aligned to your brief and budget.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="step-num">03</div>
+      <div class="step-title">Analysis &amp; Engineering</div>
+      <div class="step-body">Rigorous structural, MEP, and performance analysis to validate designs.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      </div>
+      <div class="step-num">04</div>
+      <div class="step-title">Documentation</div>
+      <div class="step-body">Complete, coordinated construction documents and specifications for tendering.</div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="step-num">05</div>
+      <div class="step-title">Delivery &amp; Handover</div>
+      <div class="step-body">Supervising construction, ensuring quality, and a successful completion.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ SECTORS ══════ -->
+<section class="sectors-section">
+  <div class="section-header reveal">
+    <span class="section-eyebrow" style="color:rgba(255,255,255,0.42);">Industries We Serve</span>
+    <h2 class="section-title" style="color:white;">Our <em style="color:rgba(255,255,255,0.58);">Sectors</em></h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.32);">Trusted across government, private, and mixed-use development.</p>
+  </div>
+
+  <div class="sectors-grid">
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="sector-name">Residential</div>
+      <div class="sector-desc">Villas, apartments, compounds, and high-rise residential towers across the GCC.</div>
+    </div>
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </div>
+      <div class="sector-name">Commercial &amp; Retail</div>
+      <div class="sector-desc">Office towers, shopping centres, mixed-use developments, and business parks.</div>
+    </div>
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 22V8l9-6 9 6v14"/><path d="M9 22V12h6v10"/></svg>
+      </div>
+      <div class="sector-name">Government &amp; Civic</div>
+      <div class="sector-desc">Ministries, municipalities, public facilities, and civic infrastructure.</div>
+    </div>
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <div class="sector-name">Healthcare</div>
+      <div class="sector-desc">Hospitals, medical centres, clinics, and specialised healthcare facilities.</div>
+    </div>
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <div class="sector-name">Education</div>
+      <div class="sector-desc">Universities, schools, training centres, and educational campus developments.</div>
+    </div>
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+      </div>
+      <div class="sector-name">Hospitality &amp; Tourism</div>
+      <div class="sector-desc">Hotels, resorts, entertainment venues, and tourism infrastructure.</div>
+    </div>
+    <div class="sector-card reveal">
+      <div class="sector-icon">
+        <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h5l2 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div class="sector-name">Industrial &amp; Logistics</div>
+      <div class="sector-desc">Warehouses, factories, industrial zones, and logistics parks.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CTA ══════ -->
+<section class="cta-section reveal">
+  <span class="section-eyebrow">Work With Us</span>
+  <h2 class="cta-heading">Ready to Start Your <em>Next Project?</em></h2>
+  <p class="cta-body">
+    From a single building to an entire city district — Canadian Consultant brings 30 years of regional expertise, a multidisciplinary team, and a passion for excellence to every engagement.
+  </p>
+  <div class="cta-buttons">
+    <a href="contact.html" class="btn-primary">
+      Get in Touch
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="projects.html" class="btn-secondary">
+      View Our Projects
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Canadian Consultant">
+  </div>
+  <div class="footer-copy">
+    <strong>Canadian Consultant</strong> — Architects &amp; Consultant Engineers<br>
+    <span style="font-size:11px;margin-top:4px;display:block;">Established 1996 &nbsp;·&nbsp; © 2026 All Rights Reserved</span>
+  </div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="js/services.js"></script>
+</body>
+</html>

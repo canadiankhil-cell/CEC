@@ -270,3 +270,61 @@ nav.scrolled {
   .nav-search input { width: 90px; }
   .nav-search { padding: 8px 14px; }
 }
+
+/* ── Centered header logo ─────────────────────────────────── */
+.nav-logo-wrap {
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav-logo-wrap img,
+.nav-logo img { height: clamp(58px, 4.2vw, 76px); width: auto; }
+@media (max-width: 768px) {
+  .nav-logo-wrap img,.nav-logo img { height: 50px; }
+}
+@media (max-width: 640px) {
+  .nav-search { display: none; }
+}
+
+/* ── Search results ───────────────────────────────────────── */
+.nav-results {
+  position: fixed; top: clamp(88px, 5vw, 104px); right: 32px;
+  width: min(380px, calc(100vw - 32px));
+  background: #fff; border: 1px solid #e8e2d9; border-top: 2px solid #7A0000;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.14);
+  z-index: 300; display: none; max-height: 60vh; overflow-y: auto;
+}
+.nav-results.show { display: block; }
+.nav-results a, .overlay-results a {
+  display: flex; flex-direction: column; gap: 3px;
+  padding: 13px 20px; text-decoration: none;
+  border-bottom: 1px solid #f0ebe3;
+}
+.nav-results a strong { font-family: 'Playfair Display', serif; font-size: 16px; color: #7A0000; font-weight: 700; }
+.nav-results a span { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #8a8174; }
+.nav-results a:hover { background: #faf6f1; }
+.sr-empty { padding: 18px 20px; font-size: 13px; color: #8a8174; }
+
+.overlay-results {
+  width: min(580px, 88vw); margin-top: 18px; max-height: 50vh; overflow-y: auto; display: none;
+}
+.overlay-results.show { display: block; }
+.overlay-results a { border-bottom: 1px solid rgba(255,255,255,0.15); padding: 14px 4px; }
+.overlay-results a strong { font-family: 'Playfair Display', serif; font-size: 20px; color: #fff; font-weight: 400; }
+.overlay-results a span { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+.overlay-results a:hover strong { text-decoration: underline; }
+.overlay-results .sr-empty { color: rgba(255,255,255,0.6); padding: 14px 4px; }
+
+.search-empty { text-align: center; padding: 60px 20px; color: #8a8174; font-size: 15px; }
+.project-card.search-flash { outline: 3px solid #C9A96E; outline-offset: 4px; }
+
+/* phones: search collapses to an icon and opens over the logo */
+@media (max-width: 640px) {
+  .nav-search { display: flex; cursor: pointer; padding: 10px; }
+  .nav-search input { width: 0; padding: 0; }
+  .nav-search:focus-within {
+    position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+    background: #fff; z-index: 5; padding: 8px 16px;
+  }
+  .nav-search:focus-within input { width: min(220px, 56vw); }
+  .nav-results { right: 16px; }
+}
